@@ -18,9 +18,11 @@ jupyter notebook --notebook-dir="your_dir" --NotebookApp.port=8888
 ```
 
 ## Kaggle Competition Rules
-The Competition Rules can be found in the readme document folder. It is important to know the competition permits the use of both competition and external data. As described in the rules section on the Kaggle competition page, the external data has to be published on the official competition forum before the entry deadline. As for this particular challenge, the entry deadline is on the same day as the submission deadline, which is on March 25th. We don’t have to rush for the first-week entry. However, please keep in mind any external data we found or generated must be posted before the deadline.
+The Competition Rules can be found in the link below. It is important to know the competition permits the use of both competition and external data. As described in the rules section on the Kaggle competition page, the external data has to be published on the official competition forum before the entry deadline. As for this particular challenge, the entry deadline is on the same day as the submission deadline, which is on March 25th. We don’t have to rush for the first-week entry. However, please keep in mind any external data we found or generated must be posted before the deadline.
 Also, if you decided to contribute to the competition, make sure you join the team before March 25th for the first-week competition. 
 
+Kaggle docs:
+https://www.kaggle.com/docs
 
 ## Datasets
 
