@@ -86,3 +86,7 @@ Methods are preliminary, final approach will depend on how models perform.
 
 TBD
 
+### Hybrid Gradient Boosting Tree and LSTM
+
+TBD
+
