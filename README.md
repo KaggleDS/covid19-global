@@ -12,9 +12,12 @@ Install latest [Anaconda Distribution](https://www.anaconda.com/distribution/#do
 ```bash
 conda create -n kaggle-covid -y python=3.7 pandas numpy scipy statsmodels scikit-learn matplotlib seaborn ipykernel
 conda activate kaggle-covid
+conda install -y -c pyviz holoviews bokeh
+pip install autopep8
 ipython kernel install --user --name=kaggle-covid
 conda deactivate
-jupyter notebook --notebook-dir="your_dir" --NotebookApp.port=8888
+conda activate base
+jupyter notebook --notebook-dir="./" --NotebookApp.port=8888
 ```
 
 ## Kaggle Competition Rules
@@ -26,17 +29,19 @@ https://www.kaggle.com/docs
 
 ## Datasets
 
+### Completed datasets
+
 * [Kaggle COVID-19 data](https://www.kaggle.com/c/covid19-global-forecasting-week-1/data)
-* Airport and Routes
-    * https://openflights.org/data.html
-* Population of cities
-    * https://data.london.gov.uk/dataset/global-city-population-estimates
-* Number of Physicians per ppl by Country
-    * https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_number_of_physicians
-* Stock Market data
-    * yfinance stock data: https://github.com/ranaroussi/yfinance
-* Regional Demographics
-    * Age
+* [Population of cities](https://www.kaggle.com/dgrechka/covid19-global-forecasting-locations-population)
+    * ~~Other source: https://data.london.gov.uk/dataset/global-city-population-estimates~~
+* [Number of ICU beds](https://www.kaggle.com/jaimeblasco/icu-beds-by-county-in-the-us)
+* [Number of Physicians per ppl by Country](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_number_of_physician)
+* Regional Demographics, like population by age group
+    * Media age from [kaggle/koryto](https://www.kaggle.com/koryto/countryinfo), amongst other things.
+* [Airport and Routes (Private dataset, see below*)](https://openflights.org/data.html)
+
+### Uncollected / Unfinished datsets
+
 * Social Media
     * twitter data (we need API access)
     * (distribution of) sentiment by geography
@@ -45,6 +50,9 @@ https://www.kaggle.com/docs
     * ideally, we would know how much people are going out?
 * Treatment Options
     * Vaccine trial stages
+
+
+*All datasets from Kaggle are found on the [sharing datasets public discussion board](https://www.kaggle.com/c/covid19-global-forecasting-week-1/discussion/137078). All "private" external datasets should be entered on that discussion board.
 
 
 ## Relevant Readings
