@@ -1,7 +1,10 @@
 #  Kaggle Challenge: CVOID-19 Global Forecasting
 
-Please Visit the [Kaggle Page for COVID 19 Global Forecasting](https://www.kaggle.com/c/covid19-global-forecasting-week-1/overview) for more information about the contest.
+Please Visit the [Kaggle Page for COVID 19 Global Forecasting](https://www.kaggle.com/c/covid19-global-forecasting-week-2/overview) for more information about the contest.
 
+Some useful Kaggle discussion:
+* [Thread for Sharing datasets](https://www.kaggle.com/c/covid19-global-forecasting-week-1/discussion/137078)
+* [Summary of Prediction models](https://www.kaggle.com/c/covid19-global-forecasting-week-1/discussion/137796)
 
 ## Getting started
 
@@ -10,6 +13,7 @@ Please Visit the [Kaggle Page for COVID 19 Global Forecasting](https://www.kaggl
 Install latest [Anaconda Distribution](https://www.anaconda.com/distribution/#download-section)
 
 ```bash
+conda remove -y --name kaggle-covid --all
 conda create -n kaggle-covid -y python=3.7 pandas numpy scipy statsmodels scikit-learn matplotlib seaborn ipykernel
 conda activate kaggle-covid
 conda install -y -c pyviz holoviews bokeh
